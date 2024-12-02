@@ -32,8 +32,9 @@ fn day_2_part_2(fname: &str) -> u32 {
                 }
             }
         }
-    }).collect::<Vec<u32>>();
-    todo!()
+        return out
+    }
+    ).collect::<Vec<u32>>().iter().sum()
 }
 pub fn parse_file_to_entries(fname: &str) -> Vec<Vec<u32>> {
     let file = File::open(fname).unwrap();
